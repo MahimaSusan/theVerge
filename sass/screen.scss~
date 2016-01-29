@@ -10,7 +10,7 @@
 	src: local('Helvetica, arial, sanserif'), local('Helvetica, arial, sanserif');
 	font-style: normal;
 	font-weight: normal;
-	src:url(./fonts/Helvetica/helvetica-neue-bold.ttf) format('truetype');	
+	src:url(./fonts/Helvetica/helvetica-neue1.ttf) format('truetype');	
 }
 $white: white;
 $lightblack: #444;
@@ -25,107 +25,111 @@ $pink:#A83279;
 $font_family_AGS: Adelle, Georgia, Serif;
 $font_family_HAS: Halvetica, Arial, sanserif;
 .container{
-width:320px;
+     width:320px;
 }
 .header{
-background-color:$orange;
-height:60px;
-width:100%;
-box-shadow: 1px 0px 0px 1px;
+     background-color:$orange;
+     height:60px;
+     width:100%;
+     box-shadow: 1px 0px 0px 1px;
 }
 #hamburger{
-height:35px;
-width:30px;
-padding: 3px 4px;
-float: left;
-display: inline-block;
-cursor: pointer;
-margin-top:10px;
+     height:35px;
+     width:30px;
+     padding: 3px 4px;
+     float: left;
+     display: inline-block;
+     cursor: pointer;
+     margin-top:10px;
 
 }
 #hamburger div{
-background-color:$white;
-border-radius:2px;
-height:5px;
-margin-top:5px;
-width:90%;
+     background-color:$white;
+     border-radius:2px;
+     height:5px;
+     margin-top:5px;
+     width:90%;
 }
 .header_logo{
-height:100%;
-width:57%;
+     height:100%;
+     width:57%;
 
-margin-left:auto;
-margin-right:auto;
-display: inline-block;
+     margin-left:auto;
+     margin-right:auto;
+     display: inline-block;
 }
 .header_logo img{
-height:100%;
-width:100%;
+     height:100%;
+     width:100%;
 }
 .header_right{
 
-height:50px;
-width:30%;
-float:right;
-display: inline-block;
+     height:50px;
+     width:30%;
+     float:right;
+     display: inline-block;
 }
 .strong1{
-font-size:2em;
-display:block;
-line-height:1.15;
-color:white;
-text-align:center;
-font-familt:$font_family_HAS;
+     font-size:2em;
+     display:block;
+     line-height:1.15;
+     color:white;
+     text-align:center;
+     font-familt:$font_family_HAS;
 }
 .strong2{
-font-size:0.65em;
-text-align:center;
-color:white;
-width:100%;
-margin-left:auto;
-margin-right:auto;
-float:right;
-font-familt:$font_family_HAS;
+    font-size:0.65em;
+    text-align:center;
+    color:white;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    float:right;
+    font-familt:$font_family_HAS;
 }
 .img1{
-height:220px;
-width:100%; 
-/*background-color:$violet_blue;
-background-image:linear-gradient(135deg,$violet_blue,$light_red);
-*/
-position:relative;
+    height:220px;
+    width:100%; 
+/*background-color:$violet_blue;*/
+    background-image:url("https://cdn2.vox-cdn.com/thumbor/G7SPrZTzxFcFoKXxnLcYFNE8ho0=/0x180:3000x1868/680x384/cdn0.vox-cdn.com/uploads/chorus_image/image/48666971/20151010CASF_Water02145_1.0.0.jpg");
+    position:relative;
+    background-position: center;
+
+&:after{
+    position:absolute;
+    background-color:$violet_blue;
+    background-image:linear-gradient(135deg, $violet_blue, $light_red);
+    opacity:0.7;
+    height:100%;
+    width:100%;
+    display:block;
 }
-/*.img1::after{
-position:absolute;
-background-color:$violet_blue;
-background-image:linear-gradient(135deg,$violet_blue,$light_red);
-opacity:0.7;
-}*/
+}
 .img1 img{
-opacity:0.3;
-width:100%;
-height:100%;
+    opacity:0.3;
+    width:100%;
+    height:100%;
 }
 .img2{
-height:220px;
-width:100%;
-background-color:$dark_green;
-background-image:linear-gradient(135deg,$dark_green,$light_green);
+    height:220px;
+    width:100%;
+    background-color:$dark_green;
+    background-image:linear-gradient(135deg,$dark_green,$light_green);
 
 }
 .img2 img{
-width:100%;
-opacity:0.3;
-height:100%;
+    width:100%;
+    opacity:0.3;
+    height:100%;
 }
 .img3{
-background-color:$violet_blue;
-background-image:linear-gradient(135deg,$violet_blue,$pink);
-width:100%;
+    background-color:$violet_blue;
+    background-image:linear-gradient(135deg,$violet_blue,$pink);
+    width:100%;
 }
 .img3 img{
-width:100%;
-opacity:0.3;
+    width:100%;
+    opacity:0.3;
 }
 #drawer{
 	    position: absolute;
@@ -157,6 +161,7 @@ opacity:0.3;
 	color: #FFF;
 	text-decoration: none;
 	text-align: center;
+        font-size:10px;
 }
  #drawer.drawer_left{
         transition: 1s;
@@ -195,6 +200,7 @@ display:block;
 color:#FFF;
 text-decoration:none;
 text-align:center;
+
 }
 #drawer2.drawer_right{
 transition:1s;
