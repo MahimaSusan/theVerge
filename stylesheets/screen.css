@@ -66,3 +66,232 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+@font-face {
+  font-family: 'Helvetica, arial, sanserif';
+  src: local("Helvetica, arial, sanserif"), local("Helvetica, arial, sanserif");
+  font-style: normal;
+  font-weight: normal;
+  src: url(./fonts/Helvetica/helvetica-neue-bold.ttf) format("truetype");
+}
+/* line 27, ../sass/screen.scss */
+.container {
+  width: 320px;
+}
+
+/* line 30, ../sass/screen.scss */
+.header {
+  background-color: #FA4B2A;
+  height: 60px;
+  width: 100%;
+  box-shadow: 1px 0px 0px 1px;
+}
+
+/* line 36, ../sass/screen.scss */
+#hamburger {
+  height: 35px;
+  width: 30px;
+  padding: 3px 4px;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* line 46, ../sass/screen.scss */
+#hamburger div {
+  background-color: white;
+  border-radius: 2px;
+  height: 5px;
+  margin-top: 5px;
+  width: 90%;
+}
+
+/* line 53, ../sass/screen.scss */
+.header_logo {
+  height: 100%;
+  width: 57%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+/* line 61, ../sass/screen.scss */
+.header_logo img {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 65, ../sass/screen.scss */
+.header_right {
+  height: 50px;
+  width: 30%;
+  float: right;
+  display: inline-block;
+}
+
+/* line 72, ../sass/screen.scss */
+.strong1 {
+  font-size: 2em;
+  display: block;
+  line-height: 1.15;
+  color: white;
+  text-align: center;
+  font-familt: Halvetica, Arial, sanserif;
+}
+
+/* line 80, ../sass/screen.scss */
+.strong2 {
+  font-size: 0.65em;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  font-familt: Halvetica, Arial, sanserif;
+}
+
+/* line 90, ../sass/screen.scss */
+.img1 {
+  height: 220px;
+  width: 100%;
+  /*background-color:$violet_blue;
+  background-image:linear-gradient(135deg,$violet_blue,$light_red);
+  */
+  position: relative;
+}
+
+/*.img1::after{
+position:absolute;
+background-color:$violet_blue;
+background-image:linear-gradient(135deg,$violet_blue,$light_red);
+opacity:0.7;
+}*/
+/* line 104, ../sass/screen.scss */
+.img1 img {
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 109, ../sass/screen.scss */
+.img2 {
+  height: 220px;
+  width: 100%;
+  background-color: #002F4B;
+  background-image: linear-gradient(135deg, #002F4B, #417711);
+}
+
+/* line 116, ../sass/screen.scss */
+.img2 img {
+  width: 100%;
+  opacity: 0.3;
+  height: 100%;
+}
+
+/* line 121, ../sass/screen.scss */
+.img3 {
+  background-color: #292484;
+  background-image: linear-gradient(135deg, #292484, #A83279);
+  width: 100%;
+}
+
+/* line 126, ../sass/screen.scss */
+.img3 img {
+  width: 100%;
+  opacity: 0.3;
+}
+
+/* line 130, ../sass/screen.scss */
+#drawer {
+  position: absolute;
+  top: 37px;
+  padding-top: 50px;
+  height: auto;
+  width: 180px;
+  background: none repeat scroll 0% 0% #2F2F2F;
+  overflow-x: hidden;
+  overflow-y: auto;
+  bottom: 34px;
+  transition: all 1s ease 0s;
+  left: -250px;
+  z-index: 2;
+}
+
+/* line 145, ../sass/screen.scss */
+#drawer ul {
+  list-style: outside none none;
+  padding: 0px;
+}
+
+/* line 150, ../sass/screen.scss */
+#drawer li {
+  margin: 0px;
+  width: 175px;
+  padding: 10px 0px;
+}
+
+/* line 155, ../sass/screen.scss */
+#drawer li a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 161, ../sass/screen.scss */
+#drawer.drawer_left {
+  transition: 1s;
+  left: 0px;
+}
+
+/* line 166, ../sass/screen.scss */
+#drawer li a:hover {
+  background-color: grey;
+}
+
+/* line 169, ../sass/screen.scss */
+#drawer {
+  padding-top: 10px;
+}
+
+/* line 172, ../sass/screen.scss */
+#drawer2 {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  left: 100%;
+  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 1s ease 0s;
+  z-index: 2;
+}
+
+/* line 183, ../sass/screen.scss */
+#drawer2 ul {
+  list-style: outside none none;
+  padding: 0px;
+}
+
+/* line 188, ../sass/screen.scss */
+#drawer2 li {
+  margin: 0px;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+/* line 193, ../sass/screen.scss */
+#drawer2 li a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 199, ../sass/screen.scss */
+#drawer2.drawer_right {
+  transition: 1s;
+  right: 0px;
+}

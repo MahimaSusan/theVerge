@@ -1,16 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Home
-        </title>
-    </head>
-    <body>
-        <div class="header">
-        </div>
-        <div class="container">
-            <footer>
-            </footer>
-        </div>
-    </body>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="header_logo">
+			<img src="./images/theverge_logo.png">
+		</div>
+       
+		<a class="header_right" href="#">
+		<strong class="strong1">9</strong>
+		<strong class="strong2">New articles</strong>
+		</nav>
+	</a>
+	
+
+	<nav id="drawer" class="drawer-left">
+	<ul>
+		<li>
+			<a href="#">HOME</a>
+		</li>
+		<li>
+			<a href="#"> LONGFORM</a>
+		</li>
+		<li><a href="#"> REVIEWS</a>
+		</li>
+		<li>
+			<a href="#">VIDEO</a>
+		</li>
+		<li>
+			<a href="#">TECH</a>
+		</li>
+		<li>
+			<a href="#">SCIENCE</a>
+		</li>
+		<li>
+			<a href="#">ENTERTAINMENT</a>
+		</li>
+		<li>
+			<a href="#">CARS</a>
+		</li>
+		<li>
+			<a href="#">DESIGNS</a>
+		</li>
+		<li>
+			<a href="#">US&WORLDS</a>
+		</li>
+		<li>
+			<a href="#">FORUMS</a>
+		</li>
+		<li>
+			<a href="#">SEARCH</a>
+		</li>
+		<li>
+			<a href="#">MORE SECTIONS</a>
+		</li>
+
+	</ul>
+	</nav>
+	<nav id="drawer2" class="drawer_right">
+	<ul>
+		<li>
+			<a href="#">HOME</a>
+		</li>
+		</ul>
+	</nav>
+</div>
+
+	<div class="img1" style="background-image: url("https://cdn0.vox-cdn.com/thumbor/aFhxzCOj3umiRbxPbcRl382gdvQ=/0x254:3000x1942/340x192/cdn0.vox-cdn.com/uploads/chorus_image/image/48644277/GettyImages-505882626.0.jpg");">
+   
+</div>
+<div class="img2">
+<img src="https://cdn0.vox-cdn.com/thumbor/aFhxzCOj3umiRbxPbcRl382gdvQ=/0x254:3000x1942/340x192/cdn0.vox-cdn.com/uploads/chorus_image/image/48644277/GettyImages-505882626.0.jpg">
+<h2>kjieuyi</h2>
+</div>
+<div class="img3">
+<img src="https://cdn3.vox-cdn.com/thumbor/gkhkL8-wwAxExPEdq6bVFBEhf8s=/0x53:1020x627/340x192/cdn0.vox-cdn.com/uploads/chorus_image/image/48650871/IMG_5826.0.jpg">
+<h2>rfhuiryf</h2>
+</div>
+<div class="first_description"></div>
+<footer>
+	
+</footer>
+</div>
+<script type="text/javascript">
+	  
+        document.getElementById('hamburger').addEventListener('click',drawer, false);
+         function  drawer(){
+        	document.getElementById('drawer').classList.toggle('drawer_left');
+          }
+        
+</script>
+<script type="text/javascript">
+	
+        document.getElementById('header_right').addEventListener('click',drawer2, false);
+         function  drawer2(){
+        	document.getElementById('drawer2').classList.toggle('drawer_right');
+</script>
+
+</body>
 </html>

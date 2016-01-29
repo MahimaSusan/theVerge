@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/reset";
 @font-face{
 	font-family: 'Helvetica, arial, sanserif';
 	src: local('Helvetica, arial, sanserif'), local('Helvetica, arial, sanserif');
@@ -201,3 +202,5 @@ right:0px;
 }
 .image_head{
 }
+
+
