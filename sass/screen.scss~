@@ -1,0 +1,203 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@font-face{
+	font-family: 'Helvetica, arial, sanserif';
+	src: local('Helvetica, arial, sanserif'), local('Helvetica, arial, sanserif');
+	font-style: normal;
+	font-weight: normal;
+	src:url(./fonts/Helvetica/helvetica-neue-bold.ttf) format('truetype');	
+}
+$white: white;
+$lightblack: #444;
+$orange: #FA4B2A;
+$violet_blue:#292484;
+$light_red:#DC4225;
+$dark_green:#002F4B;
+$light_green:#417711;
+$dark_yellow:#D38312;
+$light_yellow:#E0BE00;
+$pink:#A83279;
+$font_family_AGS: Adelle, Georgia, Serif;
+$font_family_HAS: Halvetica, Arial, sanserif;
+.container{
+width:320px;
+}
+.header{
+background-color:$orange;
+height:60px;
+width:100%;
+box-shadow: 1px 0px 0px 1px;
+}
+#hamburger{
+height:35px;
+width:30px;
+padding: 3px 4px;
+float: left;
+display: inline-block;
+cursor: pointer;
+margin-top:10px;
+
+}
+#hamburger div{
+background-color:$white;
+border-radius:2px;
+height:5px;
+margin-top:5px;
+width:90%;
+}
+.header_logo{
+height:100%;
+width:57%;
+
+margin-left:auto;
+margin-right:auto;
+display: inline-block;
+}
+.header_logo img{
+height:100%;
+width:100%;
+}
+.header_right{
+
+height:50px;
+width:30%;
+float:right;
+display: inline-block;
+}
+.strong1{
+font-size:2em;
+display:block;
+line-height:1.15;
+color:white;
+text-align:center;
+font-familt:$font_family_HAS;
+}
+.strong2{
+font-size:0.65em;
+text-align:center;
+color:white;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+float:right;
+font-familt:$font_family_HAS;
+}
+.img1{
+height:220px;
+width:100%; 
+/*background-color:$violet_blue;
+background-image:linear-gradient(135deg,$violet_blue,$light_red);
+*/
+position:relative;
+}
+/*.img1::after{
+position:absolute;
+background-color:$violet_blue;
+background-image:linear-gradient(135deg,$violet_blue,$light_red);
+opacity:0.7;
+}*/
+.img1 img{
+opacity:0.3;
+width:100%;
+height:100%;
+}
+.img2{
+height:220px;
+width:100%;
+background-color:$dark_green;
+background-image:linear-gradient(135deg,$dark_green,$light_green);
+
+}
+.img2 img{
+width:100%;
+opacity:0.3;
+height:100%;
+}
+.img3{
+background-color:$violet_blue;
+background-image:linear-gradient(135deg,$violet_blue,$pink);
+width:100%;
+}
+.img3 img{
+width:100%;
+opacity:0.3;
+}
+#drawer{
+	    position: absolute;
+    top: 37px;
+    padding-top: 50px;
+    height: auto;
+    width: 180px;
+    background: none repeat scroll 0% 0% #2F2F2F;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 34px;
+    transition: all 1s ease 0s;
+
+    left: -250px;
+    z-index: 2;
+}
+#drawer ul{
+	list-style: outside none none;
+	padding: 0px;
+	
+}
+#drawer li{
+	margin: 0px;
+	width: 175px;
+	padding: 10px 0px;
+}
+#drawer li a {
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+}
+ #drawer.drawer_left{
+        transition: 1s;
+        left:0px;
+        }
+ 
+        #drawer li a:hover {
+            background-color:grey;
+        }
+        #drawer { 
+        	padding-top: 10px;
+        	 }
+  #drawer2{
+position:absolute;
+height:30px;
+width:100%;
+left:100%;
+border:1px solid black;
+overflow-x:hidden;
+overflow-y:auto;
+transition: all 1s ease 0s;
+z-index:2;
+}
+#drawer2 ul{
+	list-style: outside none none;
+	padding: 0px;
+	
+}
+#drawer2 li{
+margin:0px;
+width:100%;
+padding:10px 0px;
+}
+#drawer2 li a{
+display:block;
+color:#FFF;
+text-decoration:none;
+text-align:center;
+}
+#drawer2.drawer_right{
+transition:1s;
+right:0px;
+}
+.image_head{
+}
