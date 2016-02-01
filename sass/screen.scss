@@ -214,6 +214,58 @@ $font_family_HAS: Halvetica, Arial, sanserif;
         opacity: 0.7;
     }
 }
+
+.img6{
+    width:75%;
+    height: 220px;
+    position: relative;
+    background-image:url("https://cdn2.vox-cdn.com/thumbor/pVKDBuU5Ut6Eu60ze90bWw0xueY=/0x185:1682x746/800x267/cdn0.vox-cdn.com/uploads/chorus_image/image/48682063/armageddon_promotional_still.0.0.jpg");
+    background-position:center;
+    /*background-size:cover;*/
+    background-repeat: no-repeat;
+    display: inline-block;
+
+
+
+
+    &:after{
+        content: '';
+        position:absolute;
+        left: 0;
+        right: 0;
+        bottom:0;
+        top: 0;
+         background-color:$dark_yellow;
+        background-image:linear-gradient(135deg,$dark_yellow,$light_green);
+        opacity: 0.7;
+    }
+}
+
+.img7{
+    width:75%;
+    height: 220px;
+    position: relative;
+    background-image:url("https://cdn0.vox-cdn.com/thumbor/5KoYwb3DZFiSCItSVgnzYhGgfv4=/0x341:2039x1021/800x267/cdn0.vox-cdn.com/uploads/chorus_image/image/48689365/spotify-logo-stock1_2040.0.jpg");
+    background-position:center;
+    /*background-size:cover;*/
+    background-repeat: no-repeat;
+    display: inline-block;
+
+
+
+
+    &:after{
+        content: '';
+        position:absolute;
+        left: 0;
+        right: 0;
+        bottom:0;
+        top: 0;
+         background-color:$dark_green;
+        background-image:linear-gradient(135deg,$dark_green,$light_green);
+        opacity: 0.7;
+    }
+}
 .person_icon{
     width: 30px;
     height: 30px;
