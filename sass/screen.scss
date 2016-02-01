@@ -63,13 +63,14 @@ $font_family_HAS: Halvetica, Arial, sanserif;
      width:100%;
      /*margin-top: -22%;*/
 }
-.header_right{
+#header_right{
 
      height:50px;
      width:29%;
      float:right;
      display: inline-block;
      border-left: 1px solid white;
+     cursor: pointer;
 }
 .line{
 	display:inline-block;
@@ -159,6 +160,26 @@ $font_family_HAS: Halvetica, Arial, sanserif;
         opacity: 0.7;
     }
 }
+.img4{
+    width:100%;
+    height: 220px;
+    position: relative;
+    background-image:url("https://cdn2.vox-cdn.com/thumbor/DAE7plskNyZissyOPNvk0-Ijlcg=/213x0:1063x850/350x350/cdn0.vox-cdn.com/uploads/chorus_image/image/48692457/airmail.0.0.jpg");
+    background-position:center;
+
+    &:after{
+    	content: '';
+    	position:absolute;
+    	left: 0;
+    	right: 0;
+    	bottom:0;
+    	top: 0;
+    	 background-color:$dark_yellow;
+        background-image:linear-gradient(135deg,$dark_yellow,$dark_green);
+        opacity: 0.7;
+    }
+}
+
 
 
 #drawer{
@@ -174,7 +195,7 @@ $font_family_HAS: Halvetica, Arial, sanserif;
     transition: all 1s ease 0s;
 
     left: -250px;
-    z-index: 2;
+    z-index: 11;
 }
 #drawer ul{
 	list-style: outside none none;
@@ -206,14 +227,16 @@ $font_family_HAS: Halvetica, Arial, sanserif;
         	 }
   #drawer2{
 position:absolute;
-height:30px;
-width:100%;
-left:100%;
-border:1px solid black;
+height:auto;
+width:75%;
+right:-100%;
+border-left:1px solid $orange;
 overflow-x:hidden;
 overflow-y:auto;
 transition: all 1s ease 0s;
-z-index:2;
+z-index:11;
+color:black;
+background-color:white;
 }
 #drawer2 ul{
 	list-style: outside none none;
@@ -232,10 +255,15 @@ text-decoration:none;
 text-align:left;
 
 }
+
 #drawer2.drawer_right{
 transition:1s;
 right:0px;
 }
+#drawer2 li a:hover {
+            color:$orange;
+        }
+
 .a1{
 	text-decoration:none;
 }
@@ -259,17 +287,32 @@ right:0px;
 	color:white;
 	margin:0.25rem 0px 0px;
 	margin-left:5%;
+	margin-right:5%;
 }
 .comment_count{
 	float:right;
-	font-size:0.9em;
+	/*font-size:0.9em;*/
+	font-size:10px;
 	display:inline-block;
 	text-align:center;
 	min-width:25px;
 	position:relative;
 	line-height:0.7;
-	padding: 0.4rem 0.2rem 0.2rem;
-	& :after{
+	/*padding: 0.4rem 0.2rem 0.2rem;*/
+	padding: 5px 1px 5px;
+	background-color:#4A8813;
+	&:after{
 		content: "";
-	}
+		position:absolute;
+	    right: 0px;
+		top: 100%;
+		display: block;
+		height: 0px;
+		width: 0px;
+		border-style:solid;
+		border-right: 7px solid transparent;
+		border-width:7px 8px 0px 0px;
+		border-color: black transparent transparent;
+	
+}
 }
