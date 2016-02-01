@@ -164,12 +164,17 @@ $font_family_HAS: Halvetica, Arial, sanserif;
     }
 }
 .img4{
-    width:100%;
+    width:75%;
     height: 220px;
     position: relative;
     background-image:url("https://cdn2.vox-cdn.com/thumbor/DAE7plskNyZissyOPNvk0-Ijlcg=/213x0:1063x850/350x350/cdn0.vox-cdn.com/uploads/chorus_image/image/48692457/airmail.0.0.jpg");
     background-position:center;
-    background-size:cover;
+    /*background-size:cover;*/
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+
+
 
     &:after{
     	content: '';
@@ -184,7 +189,37 @@ $font_family_HAS: Halvetica, Arial, sanserif;
     }
 }
 
+.img5{
+    width:75%;
+    height: 220px;
+    position: relative;
+    background-image:url("https://cdn0.vox-cdn.com/thumbor/ZER7DKNwaQ41K5uqWVHrb6Ven6U=/0x184:3696x2263/376x212/cdn0.vox-cdn.com/uploads/chorus_image/image/48678951/GettyImages-486026810.0.jpg");
+    background-position:center;
+    /*background-size:cover;*/
+    background-repeat: no-repeat;
+    display: inline-block;
 
+
+
+
+    &:after{
+        content: '';
+        position:absolute;
+        left: 0;
+        right: 0;
+        bottom:0;
+        top: 0;
+         background-color:$dark_green;
+        background-image:linear-gradient(135deg,$dark_green,$light_green);
+        opacity: 0.7;
+    }
+}
+.person_icon{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 1px;
+}
 
 #drawer{
 	    position: absolute;
@@ -275,7 +310,7 @@ right:0px;
 	position:relative;
 	padding:0px;
 	margin:0px;
-	font-size:1.4em;
+	font-size:22px;
 	z-index:10;
 	color:white;
 	line-height:1.2;
@@ -284,14 +319,39 @@ right:0px;
 	margin-left:5%;
 	margin-right:5%;
 }
+
 .img_para{
 	position:relative;
 	z-index:10;
-	font-size:0.75em;
+	font-size:12px;
 	color:white;
-	margin:0.25rem 0px 0px;
+	margin:5px 0px 0px;
 	margin-left:5%;
 	margin-right:5%;
+}
+.img_head1{
+    position:relative;
+    z-index: 10;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    padding-top:5%;
+    margin-left:5%;
+    margin-right:5%;
+    white-space: normal;
+}
+.img_para1{
+    position:relative;
+    z-index:10;
+    font-size:12px;
+    color:white;
+    margin:5px 0px 0px;
+    margin-left:5%;
+    margin-right:5%;
+    white-space: normal;
 }
 .comment_count{
 	float:right;
@@ -305,6 +365,7 @@ right:0px;
 	/*padding: 0.4rem 0.2rem 0.2rem;*/
 	padding: 5px 1px 5px;
 	background-color:#4A8813;
+    color: white;
 	&:after{
 		content: "";
 		position:absolute;
@@ -327,9 +388,10 @@ right:0px;
 }
 .recode{
 	position:relative;
-	height:50px;
+	height:35px;
 	width:100%;
-	padding:3px;
+	padding-top:5px;
+    padding-bottom:0px;
 }
 .recode_header{
 	width:100%;
@@ -390,4 +452,10 @@ right:0px;
 .author em{
 	border-left:1px solid black;
 	font-size:10px;
+}
+.img_scroll{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 220px;
 }
