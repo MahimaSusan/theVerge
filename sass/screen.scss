@@ -25,7 +25,7 @@ $pink:#A83279;
 $font_family_AGS: Adelle, Georgia, Serif;
 $font_family_HAS: Halvetica, Arial, sanserif;
 .container{
-     width:320px;
+     
 }
 .header{
      background-color:$orange;
@@ -34,8 +34,8 @@ $font_family_HAS: Halvetica, Arial, sanserif;
      box-shadow: 1px 0px 0px 1px;
 }
 #hamburger{
-     height:35px;
-     width:30px;
+     height:100%;
+     width:9%;;
      padding: 3px 4px;
      float: left;
      display: inline-block;
@@ -52,8 +52,8 @@ $font_family_HAS: Halvetica, Arial, sanserif;
 }
 .header_logo{
      height:100%;
-     width:57%;
-
+     width:50%;
+    /* margin-top: 4px;*/
      margin-left:auto;
      margin-right:auto;
      display: inline-block;
@@ -61,14 +61,24 @@ $font_family_HAS: Halvetica, Arial, sanserif;
 .header_logo img{
      height:100%;
      width:100%;
+     /*margin-top: -22%;*/
 }
 .header_right{
 
      height:50px;
-     width:30%;
+     width:29%;
      float:right;
      display: inline-block;
+     border-left: 1px solid white;
 }
+.line{
+	display:inline-block;
+	border: 1px solid white;
+	height:100%;
+	margin-left:7%;
+
+}
+
 .strong1{
      font-size:2em;
      display:block;
@@ -117,6 +127,7 @@ $font_family_HAS: Halvetica, Arial, sanserif;
     position:relative;
     background-image:url("https://cdn0.vox-cdn.com/thumbor/aFhxzCOj3umiRbxPbcRl382gdvQ=/0x254:3000x1942/340x192/cdn0.vox-cdn.com/uploads/chorus_image/image/48644277/GettyImages-505882626.0.jpg");
     background-position:center;
+
 &:after{
 	content:'';
     opacity:0.7;
@@ -179,7 +190,7 @@ $font_family_HAS: Halvetica, Arial, sanserif;
 	display: block;
 	color: #FFF;
 	text-decoration: none;
-	text-align: center;
+	text-align: left;
         font-size:10px;
 }
  #drawer.drawer_left{
@@ -216,14 +227,49 @@ padding:10px 0px;
 }
 #drawer2 li a{
 display:block;
-color:#FFF;
+color:black;
 text-decoration:none;
-text-align:center;
+text-align:left;
 
 }
 #drawer2.drawer_right{
 transition:1s;
 right:0px;
 }
-
-
+.a1{
+	text-decoration:none;
+}
+.img_head{
+	position:relative;
+	padding:0px;
+	margin:0px;
+	font-size:1.4em;
+	z-index:10;
+	color:white;
+	line-height:1.2;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	padding-top:5%;
+	margin-left:5%;
+	margin-right:5%;
+}
+.img_para{
+	position:relative;
+	z-index:10;
+	font-size:0.75em;
+	color:white;
+	margin:0.25rem 0px 0px;
+	margin-left:5%;
+}
+.comment_count{
+	float:right;
+	font-size:0.9em;
+	display:inline-block;
+	text-align:center;
+	min-width:25px;
+	position:relative;
+	line-height:0.7;
+	padding: 0.4rem 0.2rem 0.2rem;
+	& :after{
+		content: "";
+	}
+}
