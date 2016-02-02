@@ -284,7 +284,7 @@ $font_family_HAS: Halvetica, Arial, sanserif;
     overflow-y: auto;
     bottom: 34px;
     transition: all 1s ease 0s;
-
+    border-left: 2px solid $pink;
     left: -250px;
     z-index: 11;
 }
@@ -311,11 +311,14 @@ $font_family_HAS: Halvetica, Arial, sanserif;
         }
  
         #drawer li a:hover {
-            background-color:grey;
+            color:$orange;
         }
         #drawer { 
         	padding-top: 10px;
         	 }
+             .li_footer{
+                background-color:black;
+             }
   #drawer2{
 position:absolute;
 height:auto;
@@ -447,10 +450,10 @@ right:0px;
 }
 .recode_header{
 	width:100%;
-	height:50px;
+	height:35px;
 }
 .recode_header span{
-	font-size:10px;
+	font-size:20px;
 	text-transform: uppercase;
 	display:inline-block;
 	font-family: $font_family_HAS;
@@ -466,7 +469,8 @@ right:0px;
 	width:100%;
 }
 .description{
-	border-bottom: 1px solid rgb(221,221,221);
+	/*border-bottom: 1px solid rgb(221,221,221);*/
+    border-bottom: 1px solid rgba(128, 128,128,0.34);
 	position:relative;
 	padding:3px;
 }
@@ -491,6 +495,7 @@ right:0px;
 	color:$grey;
 	vertical-align:top;
     padding-top:10px;
+    padding-left:5px;
 }
 .description_content h3 {
 	font-size:16px;
@@ -499,15 +504,51 @@ right:0px;
 }
 .author strong{
 	font-size:10px;
-	font-weight:10;
+	font-weight:bold;
 }
 .author em{
 	border-left:1px solid black;
 	font-size:10px;
+    padding-left:5px;
 }
 .img_scroll{
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     height: 220px;
+}
+.see_all_news{
+    border-bottom: 1px solid rgba(128, 128,128,0.34);
+    position:relative;
+    padding:50px;
+}
+.see_all_news a {
+    color: $orange;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.see_all_news a:hover{
+    text-decoration: underline;
+}
+.footer_image{
+    display: block;
+    position:relative;
+
+}
+.back_to_top{
+    
+    
+    display: block;
+    position:absolute;
+    background-color:#555;
+    width: 100%;
+    padding:20px;
+}
+.back_to_top a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
 }
