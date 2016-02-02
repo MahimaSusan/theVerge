@@ -861,7 +861,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 725, ../sass/screen.scss */
 .footer_links {
-  border: 1px solid white;
+  padding: 5%;
   width: 100%;
   display: block;
+}
+
+/* line 732, ../sass/screen.scss */
+#icon_styles {
+  color: black;
+  background-color: white;
+  padding: 3%;
+  margin-left: 4%;
+}
+
+/* line 739, ../sass/screen.scss */
+.last_footer {
+  width: 100%;
+}
+
+/* line 747, ../sass/screen.scss */
+.last_footer img {
+  height: 100%;
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* line 752, ../sass/screen.scss */
+.last_footer p {
+  color: white;
+  font-size: 12px;
+}
+
+/* line 757, ../sass/screen.scss */
+.last_footer a {
+  text-decoration: none;
+  color: #FA4B2A;
 }

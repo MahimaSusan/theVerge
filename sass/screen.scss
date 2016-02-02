@@ -723,9 +723,39 @@ right:0px;
 
 }
 .footer_links{
-    border:1px solid white;
    
-   
+    padding: 5%;
+
     width: 100%;
     display: block;
+}
+#icon_styles{
+
+    color:black; 
+    background-color:white;
+    padding: 3%;
+    margin-left:4%;
+}
+.last_footer{
+    
+    
+    width: 100%;
+}
+.footer_img{
+
+}
+.last_footer img{
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+}
+.last_footer p{
+    color: white;
+    font-size: 12px;
+
+}
+.last_footer a{
+    text-decoration: none;
+    color: $orange;
+
 }
