@@ -1044,7 +1044,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transition: all 0s ease 0s;
     border-top: 2px solid #FA4B2A;
     left: 315px;
-    z-index: 11;
+    z-index: 14;
   }
   /* line 902, ../sass/screen.scss */
   #drop_arrow_nav ul {
@@ -1066,30 +1066,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-decoration: none;
     padding-left: 10px;
   }
-  /* line 920, ../sass/screen.scss */
+  /* line 921, ../sass/screen.scss */
   #drop_arrow_nav #drop_arrow_nav_a:hover {
     color: #FA4B2A;
   }
 
-  /* line 928, ../sass/screen.scss */
+  /* line 929, ../sass/screen.scss */
   #drop_arrow_nav.drawer_down {
     transition: 0s;
     top: 61px;
   }
-}
-@media only screen and (min-width: 600px) {
-  /* line 935, ../sass/screen.scss */
-  .description {
-    display: none;
-  }
 
-  /* line 938, ../sass/screen.scss */
-  .recode {
-    display: none;
+  /* line 933, ../sass/screen.scss */
+  .imgs1 {
+    width: 50%;
+    height: 440px;
+    z-index: 13;
+    margin-left: -10.2%;
+    display: inline-block;
   }
 
   /* line 941, ../sass/screen.scss */
-  .description_list2 {
-    position: relative;
+  .imgs2 {
+    width: 50%;
+    float: right;
+    height: 220px;
+    display: inline-block;
   }
+
+  /* line 948, ../sass/screen.scss */
+  .imgs3 {
+    height: 220px;
+    width: 50%;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    margin-bottom: 0%;
+    top: 280px;
+    right: 0px;
+  }
+
+  /* line 958, ../sass/screen.scss */
+  .imgs_scroll {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+   /* .description{
+        display: none;
+    }
+    .recode{
+        display: none;
+    }
+    .description_list2{
+        position:relative;
+
+    }*/
 }
