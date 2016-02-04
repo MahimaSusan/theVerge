@@ -69,7 +69,7 @@
      line-height:1.15;
      color:white;
      text-align:center;
-     font-familt:$font_family_HAS;
+    
 }
 .strong2{
     font-size:0.65em;
@@ -79,7 +79,7 @@
     margin-left:auto;
     margin-right:auto;
     float:right;
-    font-familt:$font_family_HAS;
+    
     text-transform: uppercase;
 }
 .person_icon{
@@ -104,6 +104,7 @@
     border-left: 2px solid $pink;
     left: -250px;
     z-index: 16;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 #drawer ul{
      list-style: outside none none;
@@ -120,7 +121,8 @@
      color: #FFF;
      text-decoration: none;
      text-align: left;
-        font-size:10px;
+        font-size:13px;
+        font-weight: bold;
 }
  #drawer.drawer_left{
         transition: 1s;
@@ -148,6 +150,7 @@ transition: all 1s ease 0s;
 z-index:16;
 color:black;
 background-color:white;
+font-family: Adelle, Georgia, Serif;
 }
 #drawer2 ul{
      list-style: outside none none;
@@ -206,6 +209,7 @@ right:0px;
         text-transform: uppercase;
         font-size: 12px;
         margin-bottom: 5px;
+        font-family: Adelle, Georgia, Serif;
     }
     .main_news_head{
         color: black;
@@ -213,6 +217,7 @@ right:0px;
         line-height: 0;
         padding-left:10px;
         line-height: 1.1;
+        font-family: Adelle, Georgia, Serif;
     }
     .head_news{
         text-decoration: none;
