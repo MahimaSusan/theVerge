@@ -1,9 +1,12 @@
-.see_all_news{
+.see_all_news_div{
     border-bottom: 1px solid rgba(128, 128,128,0.34);
-    position:relative;
-    padding:50px;
+    /*position:relative;*/
+    display: inline-block;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
-.see_all_news a {
+.see_all_news_div a {
     color: $orange;
     text-decoration:none;
     font-size: 20px;
