@@ -1,3 +1,4 @@
+
 .header{
      background-color: $orange;
      height:60px;
@@ -305,5 +306,22 @@ right:0px;
         top: 61px;
         }
         
+
+}
+@media only screen and (min-width: 1000px) {
+    .desktop_head_ack{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+.down_arrow{
+    top: 102px;
+    }
+    #drop_arrow_nav.drawer_down{
+        top:161px;
+    }
+    #header_right{
+        top: 107px;
+    }
 
 }
