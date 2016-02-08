@@ -437,6 +437,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #header_right {
     top: 107px;
   }
+
+  /* line 326, ../sass/_header.scss */
+  #hamburger {
+    display: none;
+  }
+
+  /* line 330, ../sass/_header.scss */
+  .head_img {
+    width: 9px;
+    height: 100%;
+    border: 1px solid black;
+    display: block;
+    float: left;
+  }
+
+  /* line 337, ../sass/_header.scss */
+  #imgs11 {
+    margin-left: -195px;
+  }
 }
 /* line 1, ../sass/_content.scss */
 .img {
